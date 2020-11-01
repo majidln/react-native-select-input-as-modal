@@ -1,17 +1,22 @@
 import * as React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import SelectInput from 'react-native-select-input';
+import SelectInput, { ModalSelectInput } from 'react-native-select-input';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    SelectInput.multiply(3, 7).then(setResult);
-  }, []);
+  const data = [
+    {
+      id: 1,
+      title: 'One',
+    },
+    {
+      id: 2,
+      title: 'Two',
+    },
+  ];
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <ModalSelectInput data={data} />
     </View>
   );
 }
