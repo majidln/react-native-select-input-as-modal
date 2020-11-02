@@ -1,8 +1,9 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import type Section from './types/Section';
 
 export interface Props {
-  data: Array;
+  sections: Array<Section>;
 }
 
 const Hello: React.FC<Props> = ({ data }) => {
