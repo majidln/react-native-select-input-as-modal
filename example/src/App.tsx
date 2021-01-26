@@ -1,15 +1,15 @@
 import * as React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import SelectInput, { ModalSelectInput } from 'react-native-select-input';
+import { StyleSheet, View } from 'react-native';
+import { ModalSelectInput } from 'react-native-select-input';
 
 export default function App() {
   const data = [
     {
-      id: 1,
+      value: '1',
       title: 'One',
     },
     {
-      id: 2,
+      value: '2',
       title: 'Two',
     },
   ];
