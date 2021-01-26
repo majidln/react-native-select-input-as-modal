@@ -9,8 +9,8 @@ export interface Props {
 const Hello: React.FC<Props> = ({ data }: any) => {
   return (
     <View>
-      {data.map(({ title }: any) => (
-        <Text>{title}</Text>
+      {data.map(({ title, value }: any) => (
+        <Text key={value}>{title}</Text>
       ))}
     </View>
   );
