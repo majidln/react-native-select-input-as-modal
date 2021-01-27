@@ -141,6 +141,7 @@
     ]
   },
   "dependencies": {
-    "expo": "^39.0.4"
+    "expo": "^39.0.4",
+    "react-native-modal": "^11.6.1"
   }
 }
