@@ -58,6 +58,10 @@ const data = [
 |selected|Object||Selected value of modal
 |onSelect|Function|| When user select an item this callback triggered, it's return whole object when returnObject is true else it's return object[itemValue]
 
+## cooming soon
+list of methods
+some props for custom view like wrapper style, renderHeader
+
 
 ## Contributing
 
