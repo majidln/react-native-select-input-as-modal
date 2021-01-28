@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StyleSheet, View, TouchableOpacity, Text } from 'react-native';
-import { ModalSelectInput } from 'react-native-select-input';
+import ModalSelectInput from 'react-native-select-input';
 
 export default function App() {
   const [visibleSelect, setVisibleSelect] = React.useState(false);
