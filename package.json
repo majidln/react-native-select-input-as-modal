@@ -1,7 +1,7 @@
 {
-  "name": "react-native-select-input",
-  "version": "0.1.0",
-  "description": "React Native Select Input",
+  "name": "react-native-select-input-as-modal",
+  "version": "0.0.1",
+  "description": "React Native Select Input as a modal",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
