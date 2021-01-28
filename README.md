@@ -8,14 +8,37 @@ React Native Select Input
 npm install react-native-select-input
 ```
 
+```sh
+yarn add react-native-select-input
+```
+
 ## Usage
 
 ```js
-import SelectInput from "react-native-select-input";
+import ModalSelectInput from 'react-native-select-input';
 
 // ...
+const data = [
+    {
+      value: '1',
+      title: 'One',
+    },
+    {
+      value: '2',
+      title: 'Two',
+    },
+];
+// ...
 
-const result = await SelectInput.multiply(3, 7);
+<ModalSelectInput
+    data={data}
+    isVisible={visibleSelect}
+    onClose={() => {/* close modal */}}
+    label="Select Your data"
+    selected={selected}
+    onSelect={setSelected}
+    returnObject={true}
+/>
 ```
 
 ## Contributing
