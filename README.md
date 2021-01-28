@@ -42,8 +42,10 @@ const data = [
 ```
 
 ## List of props
+
+
 |Name   | Type  |Default   |Desc   |
-| ------------ | ------------ | ------------ |
+| ------------ | ------------ | ------------ | ------------ |
 | data  | Array   |Require| Array of objects   |
 | isVisible  | Boolean |Require  | To show select modal modal   |
 |onClose   | Function  | null|Trigger when modal closed by user gesture    |
