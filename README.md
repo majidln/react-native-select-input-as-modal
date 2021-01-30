@@ -1,21 +1,21 @@
-# react-native-select-input
+# react-native-select-input-as-modal
 
 React Native Select Input
 
 ## Installation
 
 ```sh
-npm install react-native-select-input
+npm install react-native-select-input-as-modal
 ```
 
 ```sh
-yarn add react-native-select-input
+yarn add react-native-select-input-as-modal
 ```
 
 ## Usage
 
 ```js
-import ModalSelectInput from 'react-native-select-input';
+import ModalSelectInput from 'react-native-select-input-as-modal';
 
 // ...
 const data = [
