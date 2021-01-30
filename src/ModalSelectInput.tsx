@@ -7,7 +7,6 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import Modal from 'react-native-modal';
-import type Item from './types/Item';
 
 const styles = StyleSheet.create({
   modal: {
@@ -34,7 +33,7 @@ const styles = StyleSheet.create({
 });
 
 export interface Props {
-  data: Array<Item>;
+  data: Array<object>;
   isVisible: Boolean;
   onClose?: Function;
   backgroundColor?: String;
@@ -45,6 +44,7 @@ export interface Props {
   renderItem?: Function;
   selected?: Object;
   onSelect?: Function;
+  toolbarStyle?: Object;
 }
 
 const ModalSelectInput: React.FC<Props> = ({
@@ -58,6 +58,7 @@ const ModalSelectInput: React.FC<Props> = ({
   returnObject = false,
   renderItem,
   onSelect = () => {},
+  toolbarStyle,
 }: any) => {
   const itemPress = (item: any) => {
     if (returnObject) {
@@ -89,12 +90,14 @@ const ModalSelectInput: React.FC<Props> = ({
         style={styles.modal}
         isVisible={isVisible}
       >
-        <View style={{ ...styles.contentWrapper, backgroundColor }}>
-          {label && <Text style={styles.label}>{label}</Text>}
+        <View style={{ ...styles.contentWrapper }}>
+          <View style={{ backgroundColor, ...toolbarStyle }}>
+            {label && <Text style={styles.label}>{label}</Text>}
+          </View>
           <FlatList
             data={data}
             renderItem={({ item }) => renderInnerItem(item)}
-            style={styles.list}
+            style={{ backgroundColor, ...styles.list }}
             keyExtractor={(_, index) => index.toString()}
           />
         </View>
