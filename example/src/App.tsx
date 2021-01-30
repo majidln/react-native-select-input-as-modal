@@ -36,7 +36,9 @@ export default function App() {
         <Leg
           placeholder="Select a Country"
           onPress={() => setVisibleCountrySelect(!visibleCountrySelect)}
-          value={`${country.name} (${country.code})`}
+          value={`${country.name ? country.name : ''}${
+            country.code ? ' (' + country.code + ')' : ''
+          }`}
         />
         <ModalSelectInput
           data={countries}
