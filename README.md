@@ -1,21 +1,21 @@
-# react-native-select-input
+# react-native-select-input-as-modal
 
 React Native Select Input
 
 ## Installation
 
 ```sh
-npm install react-native-select-input
+npm install react-native-select-input-as-modal
 ```
 
 ```sh
-yarn add react-native-select-input
+yarn add react-native-select-input-as-modal
 ```
 
 ## Usage
 
 ```js
-import ModalSelectInput from 'react-native-select-input';
+import ModalSelectInput from 'react-native-select-input-as-modal';
 
 // ...
 const data = [
@@ -58,6 +58,15 @@ const data = [
 |selected|Object||Selected value of modal
 |onSelect|Function|| When user select an item this callback triggered, it's return whole object when returnObject is true else it's return object[itemValue]
 
+## cooming soon
+list of methods
+some props for custom view like wrapper style, renderHeader
+
+## Run example
+```sh
+cd example
+yarn android
+```
 
 ## Contributing
 
