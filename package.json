@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "react-native-select-input.podspec",
+    "react-native-select-input-as-modal.podspec",
     "!lib/typescript/example",
     "!**/__tests__",
     "!**/__fixtures__",
