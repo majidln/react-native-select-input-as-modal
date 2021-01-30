@@ -62,6 +62,11 @@ const data = [
 list of methods
 some props for custom view like wrapper style, renderHeader
 
+## Run example
+```sh
+cd example
+yarn android
+```
 
 ## Contributing
 
