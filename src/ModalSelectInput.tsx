@@ -47,7 +47,7 @@ export interface Props {
   onSelect?: Function;
 }
 
-const Hello: React.FC<Props> = ({
+const ModalSelectInput: React.FC<Props> = ({
   data,
   isVisible,
   onClose,
@@ -103,4 +103,4 @@ const Hello: React.FC<Props> = ({
   );
 };
 
-export default Hello;
+export default ModalSelectInput;
