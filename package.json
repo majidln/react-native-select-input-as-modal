@@ -1,6 +1,6 @@
 {
   "name": "react-native-select-input-as-modal",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React Native Select Input as a modal",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "react-native-select-input.podspec",
+    "react-native-select-input-as-modal.podspec",
     "!lib/typescript/example",
     "!**/__tests__",
     "!**/__fixtures__",
@@ -35,13 +35,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/majidln/react-native-select-input.git",
+  "repository": "https://github.com/majidln/react-native-select-input-as-modal.git",
   "author": "Majid Lotfinia <majidlotfinia12@gmail.com> (https://github.com/majidln)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/majidln/react-native-select-input.git/issues"
+    "url": "https://github.com/majidln/react-native-select-input-as-modal.git/issues"
   },
-  "homepage": "https://github.com/majidln/react-native-select-input.git#readme",
+  "homepage": "https://github.com/majidln/react-native-select-input-as-modal.git#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.16.2",
